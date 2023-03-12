@@ -7,7 +7,7 @@ function Type() {
       options={{
         strings: [
           "High Voltage Engineering",
-          "Power Systems and Applcations",
+          "Power Systems and Applications",
           "MERN Stack Developer",
           "Open Source Contributor",
         ],

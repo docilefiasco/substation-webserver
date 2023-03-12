@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState, Fragment } from "react";
+import Papa from "papaparse";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -9,6 +10,18 @@ import Toolstack from "./Toolstack";
 import Table from "react-bootstrap/Table";
 
 function About() {
+ const [data, setData] = useState({});
+ Papa.parse(
+   "https://docs.google.com/spreadsheets/d/13yfha5-pVdMJROmOqxyJoo2rEEgZokmglKexPEoUO0o/pub?output=csv",
+   {
+     download: true,
+     header: true,
+     complete: (results) => {
+       setData(results.data);
+     },
+   }
+ );
+ const movies = Array.from(data);
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -28,7 +41,7 @@ function About() {
           </Col>
         </Row>
 
-        <Table striped bordered hover variant="dark">
+        {/* <Table striped bordered hover variant="dark">
           <thead>
             <tr>
               <th>#</th>
@@ -56,7 +69,18 @@ function About() {
               <td>@twitter</td>
             </tr>
           </tbody>
-        </Table>
+        </Table> */}
+        <h1>data from google sheets</h1>
+        <ul>
+          {movies.map((data) => (
+            <li key={data.Time}>
+              <li>Time -- {data.Time}</li>
+              <li>Humidity - {data.Humidity}</li>
+              <li>Temperature - {data.Temperature}</li>
+            </li>
+          ))}
+        </ul>
+    
       </Container>
     </Container>
   );
