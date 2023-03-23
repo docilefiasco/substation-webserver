@@ -1,5 +1,7 @@
 import React, { useEffect, useState, Fragment } from "react";
 import Papa from "papaparse";
+import firebase from '../../firebase';
+
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -11,16 +13,24 @@ import Table from "react-bootstrap/Table";
 
 function About() {
  const [data, setData] = useState({});
- Papa.parse(
-   "https://docs.google.com/spreadsheets/d/13yfha5-pVdMJROmOqxyJoo2rEEgZokmglKexPEoUO0o/pub?output=csv",
-   {
-     download: true,
-     header: true,
-     complete: (results) => {
-       setData(results.data);
-     },
-   }
- );
+//  Papa.parse(
+//    "https://docs.google.com/spreadsheets/d/13yfha5-pVdMJROmOqxyJoo2rEEgZokmglKexPEoUO0o/pub?output=csv",
+//    {
+//      download: true,
+//      header: true,
+//      complete: (results) => {
+//        setData(results.data);
+//      },
+//    }
+//  );
+  useEffect(() => {
+    const getValue = firebase.database().ref("data");
+    getValue.on("value", (snapshot) => {
+      let value = snapshot.val();
+      // Whenever the value changes on the server, it is also reset on the running app through the variable
+      setData(value.toFixed(2));
+    });
+  }, []);
  const movies = Array.from(data);
   return (
     <Container fluid className="about-section">
