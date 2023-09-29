@@ -11,7 +11,7 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import Table from "react-bootstrap/Table";
 
-function About() {
+function About1() {
  const [data, setData] = useState({});
  Papa.parse(
    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2004499149&single=true&output=csv",
@@ -73,4 +73,4 @@ function About() {
   );
 }
 
-export default About;
+export default About1;
