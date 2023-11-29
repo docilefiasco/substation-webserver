@@ -11,10 +11,10 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import Table from "react-bootstrap/Table";
 
-function About1() {
+function About2() {
  const [data, setData] = useState({});
  Papa.parse(
-   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2004499149&single=true&output=csv",
+   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2118846161&single=true&output=csv",
    {
      download: true,
      header: true,
@@ -39,7 +39,7 @@ function About1() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Substation <strong className="purple">1</strong>
+              Substation <strong className="purple">3</strong>
             </h1>
           </Col>
         </Row>
@@ -73,4 +73,4 @@ function About1() {
   );
 }
 
-export default About1;
+export default About2;

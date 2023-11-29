@@ -598,9 +598,52 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+/* map section */
+.map-section {
+  
+
+  position: relative; 
+  padding-top: 110px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: white !important; 
+}
+.map-section image{
+  display: block;
+}
+.marker1
+{
+ position: absolute;
+ right:800px;
+ top: 200px;
+ color: green; 
+ width: 40px;
+ height: 40px;
+}
+.marker2
+{
+ position: absolute;
+ right:750px;
+ top: 300px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker3
+{
+ position: absolute;
+ right:850px;
+ top: 400px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
 /* --------- */
 /* Resume */
 /* --------- */
+
 
 .resume-section {
   position: relative !important;

@@ -26,7 +26,6 @@ function Projects() {
               imgPath={chatify}
               isBlog={false}
               title="Substation 1"
-             
               demoLink="http://localhost:3000/about"
             />
           </Col>
@@ -36,8 +35,7 @@ function Projects() {
               imgPath={bitsOfCode}
               isBlog={false}
               title="Substation 2"
-              
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink="http://localhost:3000/about1"
             />
           </Col>
 
@@ -46,8 +44,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Substation 3"
-             
-              demoLink="https://editor.soumya-jit.tech/"
+              demoLink="http://localhost:3000/about2"
             />
           </Col>
         </Row>
