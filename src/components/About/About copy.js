@@ -39,7 +39,7 @@ function About2() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Substation <strong className="purple">3</strong>
+              Substation <strong className="purple">2</strong>
             </h1>
           </Col>
         </Row>
