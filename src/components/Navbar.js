@@ -88,7 +88,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Project Resource
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Visual Dashboard
               </Nav.Link>
             </Nav.Item>
 

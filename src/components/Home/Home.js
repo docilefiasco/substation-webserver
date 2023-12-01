@@ -22,7 +22,7 @@ function Home() {
 
               <h1 className="heading-name">
                
-                <strong className="main-name"> Created by Epshita Chakravarty </strong>
+                <h3 className="main-name"> Created by Epshita Chakravarty under the guidance of Dr. N.K. Roy. </h3>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

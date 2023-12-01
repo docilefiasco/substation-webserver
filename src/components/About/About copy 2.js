@@ -14,7 +14,7 @@ import Table from "react-bootstrap/Table";
 function About2() {
  const [data, setData] = useState({});
  Papa.parse(
-   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2118846161&single=true&output=csv",
+   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2004499149&single=true&output=csv",
    {
      download: true,
      header: true,
@@ -48,18 +48,22 @@ function About2() {
         
           <thead>
             <tr>
+              <th>S.No.</th>
               <th>Time</th>
               <th>Humidity</th>
               <th>Temperature</th>
+              <th>Health</th>
               
             </tr>
           </thead>
           <tbody>
           {movies.map((data) => (
-            <tr key={data.Substation}>
+            <tr key={data.SNo}>
+              <td>{data.SNo}</td>
               <td>{data.Time}</td>
               <td>{data.Humidity}</td>
               <td>{data.Temperature}</td>
+              <td>{data.Health}</td>
             </tr>
             
           ))}

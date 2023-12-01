@@ -8,11 +8,24 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 
 import Image from "react-bootstrap/Image";
-
+import Papa from "papaparse";
 
 
 function Map() {
-  
+   const [data, setData] = useState({});
+   Papa.parse(
+     "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2023049888&single=true&output=csv",
+     {
+       download: true,
+       header: true,
+       complete: (results) => {
+         setData(results.data);
+       },
+     }
+   );
+   console.log(data);
+
+   const substation = Array.from(data);
 
   return (
     <div>
@@ -22,6 +35,7 @@ function Map() {
         <h3>Map of NIT DURGAPUR</h3>
         <h4>positions of substations</h4>
         <img className="image" src={require("./mapimage.png")} />
+        
         <a href="./about">
           <IoLocationOutline className="marker1" />
         </a>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from "react";
 import Papa from "papaparse";
-import firebase from '../../firebase';
+import firebase from "../../firebase";
 
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
@@ -11,20 +11,20 @@ import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
 import Table from "react-bootstrap/Table";
 
-function About1() {
- const [data, setData] = useState({});
- Papa.parse(
-   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2004499149&single=true&output=csv",
-   {
-     download: true,
-     header: true,
-     complete: (results) => {
-       setData(results.data);
-     },
-   }
- );
-  
- const movies = Array.from(data);
+function About2() {
+  const [data, setData] = useState({});
+  Papa.parse(
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=0&single=true&output=csv",
+    {
+      download: true,
+      header: true,
+      complete: (results) => {
+        setData(results.data);
+      },
+    }
+  );
+
+  const substation = Array.from(data);
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -39,38 +39,36 @@ function About1() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Substation <strong className="purple">2</strong>
+              Substation <strong className="purple">3</strong>
             </h1>
           </Col>
         </Row>
 
         <Table striped bordered hover variant="dark">
-        
           <thead>
             <tr>
+              <th>S.No.</th>
               <th>Time</th>
               <th>Humidity</th>
               <th>Temperature</th>
-              
+              <th>Health</th>
             </tr>
           </thead>
           <tbody>
-          {movies.map((data) => (
-            <tr key={data.Substation}>
-              <td>{data.Time}</td>
-              <td>{data.Humidity}</td>
-              <td>{data.Temperature}</td>
-            </tr>
-            
-          ))}
-            
+            {substation.map((data) => (
+              <tr key={data.Substation}>
+                <td>{data.Substation}</td>
+                <td>{data.Time}</td>
+                <td>{data.Humidity}</td>
+                <td>{data.Temperature}</td>
+                <td>{data.Health}</td>
+              </tr>
+            ))}
           </tbody>
         </Table>
-      
-       
       </Container>
     </Container>
   );
 }
 
-export default About1;
+export default About2;

@@ -16,10 +16,10 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET US <span className="purple"> INTRODUCE </span> THE PROJECT
+              LET ME <span className="purple"> INTRODUCE </span> THE PROJECT
             </h1>
             <p className="home-about-body">
-              NIT Durgapur is a spacious campus with various receiving substations to power multiples buildings and resources.
+              NIT Durgapur is a spacious campus with various receiving substations to power multiple buildings and resources.
               <br />
               <br />Unfortunately, monitoring all these substation becomes difficult without
               <i>
@@ -27,7 +27,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              Thus, through this project, we aim to
+              Thus, through this project, I aim to
               <i>
                 <b className="purple">fetch serialised data from NODEMCU </b>display it on this website.{" "}
                 {/* <b className="purple">
@@ -36,7 +36,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              We have developed this project using <b className="purple">Node.js</b> and
+              I have developed this project using <b className="purple">Node.js</b> and
               <i>
                 <b className="purple">
                   {" "}
@@ -57,9 +57,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND US ON</h1>
+            <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with US
+              Feel free to <span className="purple">connect </span>with ME
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -74,7 +74,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  // href="https://twitter.com/Soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -84,7 +84,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  // href="https://www.linkedin.com/in/soumyajit4419/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -94,7 +94,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  // href="https://www.instagram.com/soumyajit4419"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
