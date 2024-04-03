@@ -34,8 +34,8 @@ function Map() {
 
         <h3>Map of NIT DURGAPUR</h3>
         <h4>positions of substations</h4>
-        <img className="image" src={require("./mapimage.png")} />
-        
+        <img className="image" src={require("./mapimage.jpeg")} />
+
         <a href="./about">
           <IoLocationOutline className="marker1" />
         </a>
@@ -45,6 +45,30 @@ function Map() {
         </a>
         <a href="./about2">
           <IoLocationOutline className="marker3" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker1" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker4" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker5" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker6" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker7" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker8" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker9" />
+        </a>
+        <a href="./about">
+          <IoLocationOutline className="marker10" />
         </a>
       </Container>
     </div>

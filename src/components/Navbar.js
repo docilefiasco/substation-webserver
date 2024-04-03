@@ -71,14 +71,15 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
+                // as={Link}
+                // to="/project"
+                href="http://localhost:8889/notebooks/power_transformer_health_state_data_analysis.ipynb"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Substations
+                Transformer Health Check
               </Nav.Link>
             </Nav.Item>
 
@@ -88,7 +89,8 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Visual Dashboard
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Visual
+                Dashboard
               </Nav.Link>
             </Nav.Item>
 

@@ -1,97 +1,3 @@
-// import React, { useRef, useEffect, useState } from 'react';
-// import type { ChartData, ChartArea } from 'chart.js';
-// import {
-//   Chart as ChartJS,
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Tooltip,
-//   Legend,
-// } from 'chart.js';
-// import { Chart } from 'react-chartjs-2';
-// import faker from 'faker';
-
-// ChartJS.register(
-//   CategoryScale,
-//   LinearScale,
-//   PointElement,
-//   LineElement,
-//   Tooltip,
-//   Legend
-// );
-
-// const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
-// const colors = [
-//   'red',
-//   'orange',
-//   'yellow',
-//   'lime',
-//   'green',
-//   'teal',
-//   'blue',
-//   'purple',
-// ];
-
-// export const data = {
-//   labels,
-//   datasets: [
-//     {
-//       label: 'Dataset 1',
-//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-//     },
-//     {
-//       label: 'Dataset 2',
-//       data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-//     },
-//   ],
-// };
-
-// function createGradient(ctx: CanvasRenderingContext2D, area: ChartArea) {
-//   const colorStart = faker.random.arrayElement(colors);
-//   const colorMid = faker.random.arrayElement(
-//     colors.filter(color => color !== colorStart)
-//   );
-//   const colorEnd = faker.random.arrayElement(
-//     colors.filter(color => color !== colorStart && color !== colorMid)
-//   );
-
-//   const gradient = ctx.createLinearGradient(0, area.bottom, 0, area.top);
-
-//   gradient.addColorStop(0, colorStart);
-//   gradient.addColorStop(0.5, colorMid);
-//   gradient.addColorStop(1, colorEnd);
-
-//   return gradient;
-// }
-
-// export function App() {
-//   const chartRef = useRef<ChartJS>(null);
-//   const [chartData, setChartData] = useState<ChartData<'bar'>>({
-//     datasets: [],
-//   });
-
-//   useEffect(() => {
-//     const chart = chartRef.current;
-
-//     if (!chart) {
-//       return;
-//     }
-
-//     const chartData = {
-//       ...data,
-//       datasets: data.datasets.map(dataset => ({
-//         ...dataset,
-//         borderColor: createGradient(chart.ctx, chart.chartArea),
-//       })),
-//     };
-
-//     setChartData(chartData);
-//   }, []);
-
-//   return <Chart ref={chartRef} type='line' data={chartData} />;
-// }
-
 import React from "react";
 
 import { Line, Pie } from "react-chartjs-2";
@@ -101,25 +7,26 @@ import "../../style.css"
 export default function Resume() {
   const data = {
     labels: [
-      "01/01/2019",
-      "02/01/2019",
-      "03/01/2019",
-      "04/01/2019",
-      "05/01/2019",
-      "06/01/2019",
-      "07/01/2019"
+      "01/03/2024",
+      "02/03/2024",
+      "03/03/2024",
+      "04/03/2024",
+      "05/03/2024",
+      "06/03/2024",
+      "07/03/2024",
+      
     ],
     //backgroundColor: ['rgba(255,0,0,1)'],
     //lineTension: 1,
     datasets: [
       {
         label: "SUBSTATION 1",
-        
+
         fill: false,
         borderColor: "rgba(255, 0, 0, 10)",
         borderWidth: 2,
         pointRadius: 5,
-        data: [65, 59, 80, 81, 56, 55, 40]
+        data: [65, 59, 80, 81, 56, 55, 40],
       },
       {
         label: "SUBSTATION 2",
@@ -127,18 +34,81 @@ export default function Resume() {
         borderColor: "rgba(255, 255, 0, 10)",
         borderWidth: 2,
         pointRadius: 5,
-        data: [70, 32, 45, 65, 87, 92, 99]
+        data: [70, 32, 45, 65, 87, 92, 99],
       },
       {
         label: "SUBSTATION 3",
         fill: false,
         borderColor: "green",
-        fontColor:"white",
+        fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [135, 91, 125, 144, 143, 143, 139]
-      }
-    ]
+        data: [135, 91, 125, 144, 143, 143, 139],
+      },
+      {
+        label: "SUBSTATION 4",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [80, 62, 123, 150, 143, 148, 167],
+      },
+      {
+        label: "SUBSTATION 5",
+        fill: false,
+        borderColor: "rgba(255, 255, 0, 10)",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [100, 40, 60, 70, 75, 65, 80],
+      },
+      {
+        label: "SUBSTATION 6",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [120, 100, 110, 140, 152, 155, 162],
+      },
+      {
+        label: "SUBSTATION 7",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [160, 155, 144, 133, 122, 147, 152],
+      },
+      {
+        label: "SUBSTATION 8",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [150, 152, 154, 156, 145, 138, 170],
+      },
+      {
+        label: "SUBSTATION 9",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [50, 85, 122, 66, 131, 148, 153],
+      },
+      {
+        label: "SUBSTATION 10",
+        fill: false,
+        borderColor: "green",
+        fontColor: "white",
+        borderWidth: 2,
+        pointRadius: 5,
+        data: [155, 136, 110, 80, 89, 141, 137],
+      },
+    ],
   };
 
   var options = {
@@ -171,7 +141,7 @@ const pieData = {
 		'Falling'
 	],
 	datasets: [{
-		data: [70, 5, 25],
+		data: [7, 1, 2],
 		backgroundColor: [
 		'green',
 		'red',
@@ -182,7 +152,19 @@ const pieData = {
 
   return (
     <div className="resume">
+      <h2 style={{ color: "white" }}>
+        Line Visualization of Transformer Index
+      </h2>
       <Line data={data} options={options} />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <h2 style={{ color: "white" }}>
+        Pie Visualization of Transformer Health
+      </h2>
       <Pie data={pieData} options={options} />
     </div>
   );

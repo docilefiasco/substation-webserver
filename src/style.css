@@ -634,7 +634,7 @@ button:focus {
 {
  position: absolute;
  right:800px;
- top: 200px;
+ top: 300px;
  color: red; 
  width: 40px;
  height: 40px;
@@ -642,8 +642,8 @@ button:focus {
 .marker2
 {
  position: absolute;
- right:750px;
- top: 300px;
+ right:730px;
+ top: 360px;
  color: green;
 width: 40px;
  height: 40px;
@@ -652,8 +652,78 @@ width: 40px;
 .marker3
 {
  position: absolute;
- right:850px;
+ right:765px;
  top: 400px;
+ color: yellow;
+width: 40px;
+ height: 40px;
+   
+}
+.marker4
+{
+ position: absolute;
+ right:720px;
+ top: 670px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker5
+{
+ position: absolute;
+ right:770px;
+ top: 650px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker6
+{
+ position: absolute;
+ right:810px;
+ top: 710px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker7
+{
+ position: absolute;
+ right:525px;
+ top: 540px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker8
+{
+ position: absolute;
+ right:470px;
+ top: 570px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker9
+{
+ position: absolute;
+ right:540px;
+ top: 460px;
+ color: green;
+width: 40px;
+ height: 40px;
+   
+}
+.marker10
+{
+ position: absolute;
+ right:630px;
+ top: 580px;
  color: yellow;
 width: 40px;
  height: 40px;

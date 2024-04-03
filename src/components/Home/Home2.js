@@ -19,24 +19,43 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> THE PROJECT
             </h1>
             <p className="home-about-body">
-              NIT Durgapur is a spacious campus with various receiving substations to power multiple buildings and resources.
+              NIT Durgapur is a spacious campus with various receiving
+              substations to power multiple buildings and resources.
               <br />
-              <br />Unfortunately, monitoring all these substation becomes difficult without
+              <br />
+              Unfortunately, monitoring all these substation becomes difficult
+              without
               <i>
-                <b className="purple"> A Centralized Server that stores data from all substations. </b>
+                <b className="purple">
+                  {" "}
+                  A Centralized Server that stores data from all substations.{" "}
+                </b>
               </i>
               <br />
               <br />
               Thus, through this project, I aim to
               <i>
-                <b className="purple">fetch serialised data from NODEMCU </b>display it on this website.{" "}
+                <b className="purple"> fetch serialised data from NODEMCU </b>
+                display it on this website.{" "}
                 {/* <b className="purple">
                   Deep Learning and Natural Launguage Processing.
                 </b> */}
               </i>
               <br />
               <br />
-              I have developed this project using <b className="purple">Node.js</b> and
+              Once the data has been fetched, the server then analyzes the data
+              using various{" "}
+              <i>
+                <b className="purple">
+                  {" "}
+                  predictive models and machine learning algorithms.{" "}
+                </b>
+              </i>
+              This helps us understand the health of the transformer remotely
+              and in advance.
+              <br />
+              <br />I have developed this project using{" "}
+              <b className="purple">Google Sheets </b> and
               <i>
                 <b className="purple">
                   {" "}
@@ -45,7 +64,13 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.JS and Next.JS</b>
+              </i>
+              <br/>
+              along with power transformer's health state (index) analysis or
+              prediction by
+              <i>
+                <b className="purple"> the regression model. </b>
               </i>
             </p>
           </Col>
@@ -64,7 +89,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/docilefiasco"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -74,7 +99,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  // href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/lemonaches"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -84,7 +109,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  // href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/epshitachakravarty/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -94,7 +119,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  // href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/whyecewhy"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
