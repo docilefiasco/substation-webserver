@@ -4,7 +4,7 @@ import { Line, Pie } from "react-chartjs-2";
 
 import "../../style.css"
 
-export default function Resume() {
+export default function Visualization() {
   const data = {
     labels: [
       "01/03/2024",
@@ -14,7 +14,6 @@ export default function Resume() {
       "05/03/2024",
       "06/03/2024",
       "07/03/2024",
-      
     ],
     //backgroundColor: ['rgba(255,0,0,1)'],
     //lineTension: 1,
@@ -23,18 +22,18 @@ export default function Resume() {
         label: "SUBSTATION 1",
 
         fill: false,
-        borderColor: "rgba(255, 0, 0, 10)",
+        borderColor: "green",
         borderWidth: 2,
         pointRadius: 5,
-        data: [65, 59, 80, 81, 56, 55, 40],
+        data: [60, 91, 83, 97, 58, 72, 65],
       },
       {
         label: "SUBSTATION 2",
         fill: false,
-        borderColor: "rgba(255, 255, 0, 10)",
+        borderColor: "green",
         borderWidth: 2,
         pointRadius: 5,
-        data: [70, 32, 45, 65, 87, 92, 99],
+        data: [72, 61, 88, 95, 54, 69, 59],
       },
       {
         label: "SUBSTATION 3",
@@ -43,7 +42,7 @@ export default function Resume() {
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [135, 91, 125, 144, 143, 143, 139],
+        data: [72, 70, 98, 66, 52, 84, 57],
       },
       {
         label: "SUBSTATION 4",
@@ -52,16 +51,16 @@ export default function Resume() {
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [80, 62, 123, 150, 143, 148, 167],
+        data: [96, 61, 56, 63, 82, 71, 51],
       },
       {
         label: "SUBSTATION 5",
         fill: false,
-        borderColor: "rgba(255, 255, 0, 10)",
+        borderColor: "green",
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [100, 40, 60, 70, 75, 65, 80],
+        data: [88, 57, 85, 92, 70, 62, 55],
       },
       {
         label: "SUBSTATION 6",
@@ -70,7 +69,7 @@ export default function Resume() {
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [120, 100, 110, 140, 152, 155, 162],
+        data: [75, 95, 69, 77, 58, 81, 64],
       },
       {
         label: "SUBSTATION 7",
@@ -79,34 +78,34 @@ export default function Resume() {
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [160, 155, 144, 133, 122, 147, 152],
+        data: [60, 55, 44, 33, 22, 47, 52],
       },
       {
         label: "SUBSTATION 8",
         fill: false,
-        borderColor: "green",
+        borderColor: "yellow",
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [150, 152, 154, 156, 145, 138, 170],
+        data: [30, 34, 21, 48, 42, 37, 29],
       },
       {
         label: "SUBSTATION 9",
         fill: false,
-        borderColor: "green",
+        borderColor: "yellow",
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [50, 85, 122, 66, 131, 148, 153],
+        data: [53, 45, 28, 39, 41, 50, 22],
       },
       {
         label: "SUBSTATION 10",
         fill: false,
-        borderColor: "green",
+        borderColor: "red",
         fontColor: "white",
         borderWidth: 2,
         pointRadius: 5,
-        data: [155, 136, 110, 80, 89, 141, 137],
+        data: [11, 18, 5, 0, 15, 9, 3],
       },
     ],
   };

@@ -14,7 +14,7 @@ import Table from "react-bootstrap/Table";
 function About2() {
   const [data, setData] = useState({});
   Papa.parse(
-    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=0&single=true&output=csv",
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=122582593&single=true&output=csv",
     {
       download: true,
       header: true,
@@ -47,21 +47,47 @@ function About2() {
         <Table striped bordered hover variant="dark">
           <thead>
             <tr>
-              <th>S.No.</th>
+              <th>SL.No.</th>
               <th>Time</th>
-              <th>Humidity</th>
-              <th>Temperature</th>
-              <th>Health</th>
+              <th>Hydrogen</th>
+              <th>Oxygen</th>
+              <th>Nitrogen</th>
+              <th>Methane</th>
+              <th>CO</th>
+              <th>CO2</th>
+              <th>Ethylene</th>
+              <th>Acethylene</th>
+              <th>DBDS</th>
+              <th>Power Factor</th>
+              <th>Interfacial V</th>
+              <th>Dielectric Rigidity</th>
+              <th>Water Content</th>
+              <th>Health Index</th>
+              <th>Life Expectancy</th>
+              
             </tr>
           </thead>
           <tbody>
             {substation.map((data) => (
-              <tr key={data.Substation}>
-                <td>{data.Substation}</td>
+              <tr key={data.SL}>
+                <td>{data.SL}</td>
                 <td>{data.Time}</td>
-                <td>{data.Humidity}</td>
-                <td>{data.Temperature}</td>
-                <td>{data.Health}</td>
+                <td>{data.Hydrogen}</td>
+                <td>{data.Oxygen}</td>
+                <td>{data.Methane}</td>
+                <td>{data.CO}</td>
+                <td>{data.CO2}</td>
+                <td>{data.Ethylene}</td>
+                <td>{data.Ethane}</td>
+                <td>{data.Acethylene}</td>
+                <td>{data.DBDS}</td>
+                <td>{data.Power_Factor}</td>
+                <td>{data.Interfacial_V}</td>
+                <td>{data.Dielectric_rigidity}</td>
+                <td>{data.Water_content}</td>
+                <td>{data.Health_index}</td>
+                <td>{data.Life_expectation}</td>
+                
               </tr>
             ))}
           </tbody>
