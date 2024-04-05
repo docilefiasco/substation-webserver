@@ -36,38 +36,38 @@ function Map() {
         <h4>positions of substations</h4>
         <img className="image" src={require("./mapimage.jpeg")} />
 
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker1" />
         </a>
 
-        <a href="./about1">
+        <a href="./station2">
           <IoLocationOutline className="marker2" />
         </a>
-        <a href="./about2">
+        <a href="./station3">
           <IoLocationOutline className="marker3" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker1" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker4" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker5" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker6" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker7" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker8" />
         </a>
-        <a href="./about">
+        <a href="./station1">
           <IoLocationOutline className="marker9" />
         </a>
-        <a href="./about">
+        <a href="./station2">
           <IoLocationOutline className="marker10" />
         </a>
       </Container>

@@ -635,7 +635,7 @@ button:focus {
  position: absolute;
  right:800px;
  top: 300px;
- color: red; 
+ color: green; 
  width: 40px;
  height: 40px;
 }
@@ -644,7 +644,7 @@ button:focus {
  position: absolute;
  right:730px;
  top: 360px;
- color: green;
+ color: yellow;
 width: 40px;
  height: 40px;
    
@@ -654,7 +654,7 @@ width: 40px;
  position: absolute;
  right:765px;
  top: 400px;
- color: yellow;
+ color: red;
 width: 40px;
  height: 40px;
    

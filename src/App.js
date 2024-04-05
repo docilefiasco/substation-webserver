@@ -6,8 +6,8 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Visualization from "./components/Resume/Visual";
-import About2 from "./components/About/About copy";
-//import About2 from "./components/About/About copy 2";
+import About1 from "./components/About/About copy";
+import About2 from "./components/About/About copy 2";
 import Map from "./components/About/map";
 import {
   BrowserRouter as Router,
@@ -40,9 +40,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/project" element={<Projects />} />
-          {/* <Route path="/about1" element={<About1 />} /> */}
-          <Route path="/about2" element={<About2 />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/station2" element={<About1 />} />
+          <Route path="/station3" element={<About2 />} />
+          <Route path="/station1" element={<About />} />
           <Route path="/visualization" element={<Visualization />} />
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<Navigate to="/" />} />
