@@ -73,7 +73,7 @@ function NavBar() {
               <Nav.Link
                 // as={Link}
                 // to="/project"
-                href="http://localhost:8888/notebooks/power_transformer_health_state_data_analysis.ipynb"
+                href="https://colab.research.google.com/drive/1EUALgJW00Gi4iVuDfrmRfjFrWvpsXohC#scrollTo=etKJ3dgSZpCM"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -93,8 +93,6 @@ function NavBar() {
                 Dashboard
               </Nav.Link>
             </Nav.Item>
-
-            
           </Nav>
         </Navbar.Collapse>
       </Container>
