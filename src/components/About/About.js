@@ -1,23 +1,31 @@
  import React, { useEffect, useState, Fragment } from "react";
   import Papa from "papaparse";
   import "../About/style.css";
-// import firebase from '../../firebase';
+import firebase from '../../firebase';
 
-// import { Container, Row, Col } from "react-bootstrap";
-// import Particle from "../Particle";
-// import Github from "./Github";
-// import Techstack from "./Techstack";
-// import Aboutcard from "./AboutCard";
-// import laptopImg from "../../Assets/about.png";
-// import Toolstack from "./Toolstack";
-// import Table from "react-bootstrap/Table";
-// import BootstrapTable from "react-bootstrap-table-next";
-// import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
-// import paginationFactory from "react-bootstrap-table2-paginator";
+import { MDBDataTable, MDBNavLink } from "mdbreact";
+
+import { Container, Row, Col } from "react-bootstrap";
+import Particle from "../Particle";
+import Github from "./Github";
+import Techstack from "./Techstack";
+import Aboutcard from "./AboutCard";
+import laptopImg from "../../Assets/about.png";
+import Toolstack from "./Toolstack";
+import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import { Table, Pagination } from "react-bootstrap";
+
+// Import from react-bootstrap-table
+import { BootstrapTable, PaginationProvider } from "react-bootstrap-table";
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+//import {Table} from "react-bootstrap/Table";
+//import BootstrapTable from "react-bootstrap-table-next";
+import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";
+import paginationFactory from "react-bootstrap-table2-paginator";
 // function About() {
 //  const [data, setData] = useState({});
 //  Papa.parse(
-//    "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=2004499149&single=true&output=csv",
+//    "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4P-q5rnKoQoB0E6iwFWBJEXAnO-l0lJzFAgzIETOviGNOCwpga7GECInrnP03AoweP4vGbPP-RDvx/pub?gid=1418884457&single=true&output=csv",
 //    {
 //      download: true,
 //      header: true,
@@ -26,8 +34,9 @@
 //      },
 //    }
 //  );
-  
+//   console.log(data);
 //  const movies = Array.from(data);
+//  console.log(movies);
 //   return (
 //     <Container fluid className="about-section">
 //       <Particle />
@@ -37,40 +46,43 @@
 //             md={7}
 //             style={{
 //               justifyContent: "center",
-//               paddingTop: "30px",
-//               paddingBottom: "50px",
+//               //paddingTop: "30px",
+//               //paddingBottom: "50px",
 //             }}
-//           >
-//             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-//               Substation <strong className="purple">1</strong>
-//             </h1>
-//           </Col>
+//           ></Col>
 //         </Row>
 
 //         <Table striped bordered hover variant="dark">
-        
 //           <thead>
 //             <tr>
+//               <th>SL</th>
 //               <th>Time</th>
-//               <th>Humidity</th>
 //               <th>Temperature</th>
-              
+//               <th>Pressure</th>
+//               <th>Bottom Oil Temperature</th>
+//               <th>Top Oil Temperature</th>
+//               <th>BDV</th>
+//               <th>Health Index</th>
+//               <th>Health Classification</th>
 //             </tr>
 //           </thead>
 //           <tbody>
-//           {movies.map((data) => (
-//             <tr key={data.Substation}>
-//               <td>{data.Time}</td>
-//               <td>{data.Humidity}</td>
-//               <td>{data.Temperature}</td>
-//             </tr>
-            
-//           ))}
-            
+//             {movies.map((data) => (
+//               <tr key={data.SL}>
+//                 <td>{data.SL}</td>
+//                 <td>{data.Time}</td>
+//                 <td>{data.Temperature}</td>
+//                 <td>{data.Pressure}</td>
+//                 <td>{data.Bottom_Oil_Temperature}</td>
+//                 <td>{data.Top_Oil_Temperature}</td>
+//                 <td>{data.BDV}</td>
+//                 <td>{data.Health_Index}</td>
+//                 <td>{data.Health_Classification}</td>
+//               </tr>
+//             ))}
 //           </tbody>
+          
 //         </Table>
-      
-       
 //       </Container>
 //     </Container>
 //   );
@@ -79,11 +91,10 @@
 
 
 
-// export default About;
 
 
 
-import { MDBDataTable, MDBNavLink } from "mdbreact";
+
 
 
 
@@ -93,20 +104,23 @@ const About = () => {
     // useEffect(() => {
     //   const fetchGoogleSheetData = async () => {
     //     const csvUrl =
-    //       "https://docs.google.com/spreadsheets/d/e/2PACX-1vQSqcTXwKmnJMuG1742iERdwuMD8Ri-Bz8okCjZbM9tKU7w3PJWYZmofpZ-pP8HgmWsw-NM4q84xWSF/pub?gid=0&single=true&output=csv"; // Replace with your Google Sheets CSV file URL
+    //       "https://docs.google.com/spreadsheets/d/e/2PACX-1vT4P-q5rnKoQoB0E6iwFWBJEXAnO-l0lJzFAgzIETOviGNOCwpga7GECInrnP03AoweP4vGbPP-RDvx/pub?gid=1418884457&single=true&output=csv"; // Replace with your Google Sheets CSV file URL
     //     const response = await fetch(csvUrl);
     //     const text = await response.text();
     //     const parsedData = Papa.parse(text, { header: true });
+       
     //     setData(parsedData.data);
-        
-        
     //   };
 
     //   fetchGoogleSheetData();
       
     // }, []);
  
-const data = {
+
+    //  const movies = Array.from(data);
+    //  console.log(movies);
+
+    const data = {
   columns: [
     {
       label: "SL",
@@ -26872,6 +26886,7 @@ const data = {
   ],
 };
   console.log(data);
+     
  
   return (
     <MDBDataTable
@@ -26881,10 +26896,12 @@ const data = {
       small
       data={data}
       
-    >
+
       
-      </MDBDataTable>
-    
+
+      
+      
+    ></MDBDataTable>
   );
 };
 
