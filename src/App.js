@@ -9,6 +9,7 @@ import Visualization from "./components/Resume/Visual";
 import About1 from "./components/About/About copy";
 import About2 from "./components/About/About copy 2";
 import Map from "./components/About/map";
+import About3 from "./components/About/About copy 3";
 import {
   BrowserRouter as Router,
   Route,
@@ -43,6 +44,7 @@ function App() {
           <Route path="/station2" element={<About1 />} />
           <Route path="/station3" element={<About2 />} />
           <Route path="/station1" element={<About />} />
+          <Route path="/station4" element={<About3 />} />
           <Route path="/visualization" element={<Visualization />} />
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<Navigate to="/" />} />

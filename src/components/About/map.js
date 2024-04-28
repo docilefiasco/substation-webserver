@@ -49,7 +49,7 @@ function Map() {
         <a href="./station1">
           <IoLocationOutline className="marker1" />
         </a>
-        <a href="./station1">
+        <a href="./station4">
           <IoLocationOutline className="marker4" />
         </a>
         <a href="./station1">
