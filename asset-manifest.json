@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/substation-webserver/static/css/main.9da21970.css",
-    "main.js": "/substation-webserver/static/js/main.8d9ae9d9.js",
+    "main.js": "/substation-webserver/static/js/main.aa07ce6b.js",
     "static/js/415.4d6acbeb.chunk.js": "/substation-webserver/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/substation-webserver/static/js/787.1ed0c42c.chunk.js",
     "static/media/leaf.png": "/substation-webserver/static/media/leaf.ff2616f664c8c0ceab91.png",
@@ -19,12 +19,12 @@
     "static/media/pre.svg": "/substation-webserver/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/substation-webserver/index.html",
     "main.9da21970.css.map": "/substation-webserver/static/css/main.9da21970.css.map",
-    "main.8d9ae9d9.js.map": "/substation-webserver/static/js/main.8d9ae9d9.js.map",
+    "main.aa07ce6b.js.map": "/substation-webserver/static/js/main.aa07ce6b.js.map",
     "415.4d6acbeb.chunk.js.map": "/substation-webserver/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/substation-webserver/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9da21970.css",
-    "static/js/main.8d9ae9d9.js"
+    "static/js/main.aa07ce6b.js"
   ]
 }
