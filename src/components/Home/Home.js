@@ -14,15 +14,18 @@ function Home() {
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Welcome to NIT Durgapur Substation Server{" "}
+                Health Monitoring Tool (HMTT){" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
               <h1 className="heading-name">
-               
-                <h3 className="main-name"> Created by Epshita Chakravarty under the guidance of Dr. N.K. Roy. </h3>
+                <h3 className="main-name">
+                  {" "}
+                  Created by Epshita Chakravarty under the guidance of Dr. N.K.
+                  Roy.{" "}
+                </h3>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>

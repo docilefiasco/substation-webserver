@@ -152,7 +152,7 @@ const pieData = {
   return (
     <div className="resume">
       <h2 style={{ color: "white" }}>
-        Line Visualization of Transformer Index
+        Line Visualization of Transfomer Health Index
       </h2>
       <Line data={data} options={options} />
       <br />
@@ -162,7 +162,7 @@ const pieData = {
       <br />
       <br />
       <h2 style={{ color: "white" }}>
-        Pie Visualization of Transformer Health
+       Count of effective Transformers
       </h2>
       <Pie data={pieData} options={options} />
     </div>
