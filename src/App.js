@@ -34,25 +34,25 @@ function App() {
   }, []);
 
   return (
-    <HashRouter>
+    <Router>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/hmtt" element={<Home />} />
-          <Route path="/hmtt/project" element={<Projects />} />
-          <Route path="/hmtt/station2" element={<About1 />} />
-          <Route path="/hmtt/station3" element={<About2 />} />
-          <Route path="/hmtt/station1" element={<About />} />
-          <Route path="/hmtt/station4" element={<About3 />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Projects />} />
+          <Route path="/station2" element={<About1 />} />
+          <Route path="/station3" element={<About2 />} />
+          <Route path="/station1" element={<About />} />
+          <Route path="/station4" element={<About3 />} />
           <Route path="/visualization" element={<Visualization />} />
           <Route path="/map" element={<Map />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </div>
-    </HashRouter>
+    </Router>
   );
 }
 
